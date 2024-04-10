@@ -22,13 +22,13 @@
       "finish_reason": "stop",
       "index": 0,
       "message": {
-        "content": "你好！有什么我可以帮助你的吗？",
+        "content": "敏捷的棕色狐狸跳过了懒狗。 (繁体中文：敏捷的棕色狐狸跳過了懶狗。)",
         "role": "assistant"
       }
     }
   ],
-  "created": 1712733284,
-  "id": "chatcmpl-9CMSKVQlDckZxmBZCB8KhjBHFWnrq",
+  "created": 1712733192,
+  "id": "chatcmpl-9CMQqYYUTsgsXPcSGKJbu7EUOb4uV",
   "model": "gpt-35-turbo",
   "object": "chat.completion",
   "prompt_filter_results": [
@@ -56,8 +56,8 @@
   ],
   "system_fingerprint": null,
   "usage": {
-    "completion_tokens": 18,
-    "prompt_tokens": 9,
-    "total_tokens": 27
+    "completion_tokens": 60,
+    "prompt_tokens": 99,
+    "total_tokens": 159
   }
 }
