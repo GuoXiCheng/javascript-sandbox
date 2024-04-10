@@ -1,0 +1,63 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "你好！有什么我可以帮助你的吗？",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1712727773,
+  "id": "chatcmpl-9CL1RsLsc33JIxtKdVhedqLR76ijS",
+  "model": "gpt-35-turbo",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 9,
+    "total_tokens": 27
+  }
+}
