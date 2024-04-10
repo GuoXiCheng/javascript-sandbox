@@ -1,22 +1,21 @@
 import axios from "axios";
-import { openai_url, openai_headers, openai_api_key } from '../../env.json';
 import fs from 'fs';
 import path from 'path';
 
-export async function basicUsage() {
+export async function basicUsage(url: string, headers: object, apiKey: string) {
 
     const payload = {
-        "temperature": 0,
+        "temperature": 0.7,
         "messages": [{
-            "role": "assistant",
+            "role": "user",
             "content": "你好"
         }]
     };
 
-    const res = await axios.post(openai_url, payload, {
+    const res = await axios.post(url, payload, {
         headers: {
-            ...openai_headers,
-            "Authorization": `Bearer ${openai_api_key}`
+            ...headers,
+            "Authorization": `Bearer ${apiKey}`
         }
     });
 
