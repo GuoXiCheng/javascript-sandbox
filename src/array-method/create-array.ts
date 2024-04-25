@@ -20,7 +20,7 @@ const arr6 = new Array(5); // 创建一个长度为5的数组，元素都是unde
 
 // #region array-from-1
 const arr7 = Array.from("Array"); // [ 'A', 'r', 'r', 'a', 'y' ]
-// #endregion Array.from-1
+// #endregion array-from-1
 
 // #region array-from-2
 const arr8 = Array.from(new Map().set(1, 2).set(3, 4)); // [ [ 1, 2 ], [ 3, 4 ] ]
