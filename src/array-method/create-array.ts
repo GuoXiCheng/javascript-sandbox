@@ -24,17 +24,17 @@ const resOfArrFrom = Array.from("Array"); // [ 'A', 'r', 'r', 'a', 'y' ]
 // #endregion array-from-1
 
 // #region array-from-2
-const resOfArrMap = Array.from(new Map().set(1, 2).set(3, 4)); // [ [ 1, 2 ], [ 3, 4 ] ]
+const resOfArrMap = Array.from(new Map().set("age", 18)); // [ [ 'age', 18 ] ]
 
 const resOfArrSet = Array.from(new Set([1, 2, 3, 4, 5])); // [ 1, 2, 3, 4, 5 ]
 // #endregion array-from-2
 
 // #region array-from-3
-const resOfArrFromFun = Array.from([1, 2, 3, 4, 5], (x) => x * 2); // [ 2, 4, 6, 8, 10 ]
+const resOfArrFromFun = Array.from([1, 2, 3], (x) => x * 2); // [ 2, 4, 6 ]
 // #endregion array-from-3
 
 // #region array-of
 const resOfArrOf = Array.of(1, 2, 3, 4, 5); // [ 1, 2, 3, 4, 5 ]
 // #endregion array-of
 
-console.log(resOfArrFromFun);
+console.log(resOfArrMap);
