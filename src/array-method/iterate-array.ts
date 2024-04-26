@@ -32,6 +32,7 @@ for (let i = 0; i < arr.length; i++) {
   if (arr[i] % 2 === 0) break;
   console.log(arr[i]);
 }
+// #endregion for-loop-4
 
 console.log("for-of循环");
 // #region for-of-1
