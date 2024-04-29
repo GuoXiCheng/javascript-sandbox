@@ -1,7 +1,7 @@
 // run with: ts-node src/array-method/search-array.ts
 export {};
 
-const arr = ["apple", "banana", "cherry", "date", "elderberry"];
+const arr = ["apple", "banana", "cherry", "date", "elderberry", NaN];
 
 // #region indexOf-1
 const resOfIndex = arr.indexOf("banana");
@@ -50,4 +50,9 @@ const resOfIncludesForwards = arr.includes("banana", 2);
 // #region includes-3
 const resOfIncludesBackwards = arr.includes("banana", -2);
 // #endregion includes-3
-console.log(resOfIncludesBackwards);
+
+// #region check-not-a-number
+const resOfIndexOfNaN = arr.indexOf(NaN); // -1
+const resOfIncludesNaN = arr.includes(NaN); // true
+// #endregion check-not-a-number
+console.log(resOfIncludesNaN);
