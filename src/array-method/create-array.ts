@@ -27,6 +27,8 @@ const resOfArrFrom = Array.from("Array"); // [ 'A', 'r', 'r', 'a', 'y' ]
 const resOfArrMap = Array.from(new Map().set("age", 18)); // [ [ 'age', 18 ] ]
 
 const resOfArrSet = Array.from(new Set([1, 2, 3, 4, 5])); // [ 1, 2, 3, 4, 5 ]
+
+const resOfArrObj = Array.from({ length: 5 }, (curr, index) => index + 1); // [ 0, 1, 2, 3, 4 ]
 // #endregion array-from-2
 
 // #region array-from-3
@@ -37,4 +39,4 @@ const resOfArrFromFun = Array.from([1, 2, 3], (x) => x * 2); // [ 2, 4, 6 ]
 const resOfArrOf = Array.of(1, 2, 3, 4, 5); // [ 1, 2, 3, 4, 5 ]
 // #endregion array-of
 
-console.log(resOfArrMap);
+console.log(resOfArrObj);
