@@ -28,7 +28,8 @@ const resOfArrMap = Array.from(new Map().set("age", 18)); // [ [ 'age', 18 ] ]
 
 const resOfArrSet = Array.from(new Set([1, 2, 3, 4, 5])); // [ 1, 2, 3, 4, 5 ]
 
-const resOfArrObj = Array.from({ length: 5 }, (curr, index) => index + 1); // [ 0, 1, 2, 3, 4 ]
+const resOfArrObj = Array.from({ length: 5 }, (curr, index) => index + 1);
+// [ 0, 1, 2, 3, 4 ]
 // #endregion array-from-2
 
 // #region array-from-3
