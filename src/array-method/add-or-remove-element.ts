@@ -26,8 +26,8 @@ const resOfShift = fruitsOfShift.shift(); // "Orange"
 
 // #region splice-1
 const fruitsOfSpliceAdd = ["Apple", "Banana"];
-const resOfSpliceAdd = fruitsOfSpliceAdd.splice(1, 1, "L", "K"); // [ 'Banana' ]
-// [ 'Apple', 'L', 'K' ]
+const resOfSpliceAdd = fruitsOfSpliceAdd.splice(1, 0, "Orange", "Pineapple"); // []
+// [ 'Apple', 'Orange', 'Pineapple', 'Banana' ]
 // #endregion splice-1
 
 // #region splice-2
@@ -35,3 +35,6 @@ const fruitsOfSpliceRemove = ["Apple", "Banana", "Orange", "Pineapple"];
 const resOfSpliceRemove = fruitsOfSpliceRemove.splice(1, 1); // [ 'Banana' ]
 // [ 'Apple', 'Orange', 'Pineapple' ]
 // #endregion splice-2
+
+console.log(fruitsOfSpliceAdd);
+console.log(resOfSpliceAdd);
