@@ -12,7 +12,7 @@ const slice2 = animals.slice(2, 4); // ["camel", "duck"]
 const slice3 = animals.slice(-2); // ["duck", "elephant"]
 
 const slice4 = animals.slice(-2, -1); // ["duck"]
-// #region slice
+// #endregion slice
 
 // #region concat
 const arr1 = ["a"];
