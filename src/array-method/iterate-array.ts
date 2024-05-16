@@ -1,4 +1,4 @@
-// run with: ts-node src/array-method/iterative-array.ts
+// run with: ts-node src/array-method/iterate-array.ts
 
 export {};
 
@@ -69,3 +69,33 @@ try {
   }
 }
 // #endregion forEach-2
+
+console.log("map方法");
+// #region map
+const resOfMap = arr.map((item) => item * 2); // [2, 4, 6, 8, 10]
+// #endregion map
+console.log(resOfMap);
+
+console.log("filter方法");
+// #region filter
+const resOfFilter = arr.filter((item) => item % 2 === 0); // [2, 4]
+// #endregion filter
+console.log(resOfFilter);
+
+console.log("reduce方法");
+// #region reduce
+const resOfReduce = arr.reduce((acc, cur) => acc + cur, 0); // 15
+// #endregion reduce
+console.log(resOfReduce);
+
+console.log("every方法");
+// #region every
+const resOfEvery = arr.every((item) => item > 0); // true
+// #endregion every
+console.log(resOfEvery);
+
+console.log("some方法");
+// #region some
+const resOfSome = arr.some((item) => item > 3); // true
+// #endregion some
+console.log(resOfSome);
