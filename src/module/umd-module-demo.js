@@ -7,7 +7,7 @@
         module.exports = factory();
     } else {
         // Browser globals (root is window)
-        root.myModule = factory();
+        root.umdModuleDemo = factory();
     }
 }(this, function () {
     // 模块代码
