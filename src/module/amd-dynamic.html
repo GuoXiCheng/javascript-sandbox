@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  </head>
+  <body>
+    <h1>AMD Demo</h1>
+    <button id="loadModule">Load Module</button>
+    <script>
+      // 定义模块 moduleA
+      define("moduleA", [], function () {
+        return {
+          showMessage: function () {
+            document.getElementsByTagName("h1")[0].innerText = "Hello from moduleA!";
+          },
+        };
+      });
+
+      document.getElementById("loadModule").onclick = function (e) {
+        // 判断是不是双击
+        if (e.detail === 2) {
+          // 使用 require 引入模块 moduleA
+          require(["moduleA"], function (moduleA) {
+            moduleA.showMessage();
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

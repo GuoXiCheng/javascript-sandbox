@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  </head>
+  <body>
+    <h1>AMD Demo</h1>
+  </body>
+  <script>
+    // 定义模块 moduleA
+    define("moduleA", [], function () {
+      const moduleA = {
+        doModuleA: function () {
+          document.getElementsByTagName("h1")[0].innerText = "Hello from moduleA!";
+        },
+      };
+
+      return moduleA;
+    });
+
+    // 定义模块 moduleB 依赖 moduleA
+    define("moduleB", ["moduleA"], function (moduleA) {
+      return {
+        doModuleB: function () {
+          moduleA.doModuleA();
+        },
+      };
+    });
+
+    // 使用 require 引入模块 moduleB
+    require(["moduleB"], function (moduleB) {
+      moduleB.doModuleB();
+    });
+  </script>
+</html>
