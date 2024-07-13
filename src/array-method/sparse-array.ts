@@ -42,11 +42,15 @@ for (const key in iterateSparseArr) {
   console.log(iterateSparseArr[key]); // a
 }
 
+iterateSparseArr.forEach((item) => {
+  console.log(item); // a
+});
+
 for (const item of iterateSparseArr) {
   console.log(item); // undefined undefined undefined a
 }
 
-iterateSparseArr.forEach((item) => {
-  console.log(item); // a
-});
+for (let i = 0; i < iterateSparseArr.length; i++) {
+  console.log(iterateSparseArr[i]); // undefined undefined undefined a
+}
 // #endregion iterate-sparse-array
