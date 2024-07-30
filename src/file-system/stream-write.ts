@@ -1,6 +1,7 @@
 // run with: ts-node src/file-system/stream-write.ts
 import fs from "fs";
 
+// #region write
 const writeStream = fs.createWriteStream("example/file.txt");
 
 writeStream.on("open", () => {
@@ -16,3 +17,4 @@ writeStream.on("finish", () => {
 writeStream.on("error", (error) => {
   console.error(error);
 });
+// #endregion write
