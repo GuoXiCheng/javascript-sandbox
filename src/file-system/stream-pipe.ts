@@ -1,5 +1,6 @@
 // run with: ts-node src/file-system/stream-pipe.ts
 
+// #region pipe
 import fs from "fs";
 import zip from "zlib";
 
@@ -12,3 +13,4 @@ readStream.pipe(gzip).pipe(writeStream);
 writeStream.on("finish", () => {
   console.log("Write completed");
 });
+// #endregion pipe
