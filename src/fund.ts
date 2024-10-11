@@ -18,5 +18,6 @@ const finalAmountDecimal = amountHeldDecimal.mul(percentageDifferenceDecimal).ro
 if (balanceDecimal.isNegative()) {
   console.log("Buy: ", finalAmountDecimal.toNumber());
 } else {
-  console.log("Sell: ", finalAmountDecimal.toNumber());
+  const soldShareDecimal = finalAmountDecimal.div(currentValuationDecimal).round();
+  console.log("Sell: ", soldShareDecimal.toNumber());
 }
